@@ -95,11 +95,10 @@ def all_supplies_in_holidays(holiday_hash)
 
       supplies.each do |supply|
         if supplies.index(supply) < (supplies.length - 1)
-          print "#{supply}, "
+          string = string + "#{supply}, "
 
         else
-          print "#{supply}"
-          puts " "
+          string = string + "#{supply}"
         end # supply if-statment
       end # supplies.each do statement
 
