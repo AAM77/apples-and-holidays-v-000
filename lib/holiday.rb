@@ -92,7 +92,6 @@ def all_supplies_in_holidays(holiday_hash)
           word.capitalize
         end
         puts "#{split_words.join(' ')}:"
-        end
       else
         puts "#{holiday.to_s.capitalize}:"
       end
