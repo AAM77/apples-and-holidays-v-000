@@ -99,8 +99,7 @@ def all_supplies_in_holidays(holiday_hash)
         else
           print "#{supply}"
           puts " "
-          end # last_supply inner if-statement
-        end # supply outer if-statment
+        end # supply if-statment
       end # supplies.each do statement
     end # holidays.each do statement
   end # holiday_hase.each do statement
