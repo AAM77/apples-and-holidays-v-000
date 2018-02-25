@@ -112,7 +112,7 @@ def all_supplies_in_holidays(holiday_hash)
       end # supplies.each do statement
     end # holidays.each do statement
   end # holiday_hase.each do statement
-end
+end # main-method
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
