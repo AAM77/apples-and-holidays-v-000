@@ -88,7 +88,7 @@ def all_supplies_in_holidays(holiday_hash)
     holidays.each do |holiday, supplies|
       string = ""
       if holiday.to_s.include?('_')
-        print "  #{holiday.to_s.split('_').collect {|word| word.capitalize}.join(' ')}: "
+        string = string + "  #{holiday.to_s.split('_').collect {|word| word.capitalize}.join(' ')}: "
       else
         print "  #{holiday.to_s.capitalize}: "
       end
