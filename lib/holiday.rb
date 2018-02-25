@@ -91,7 +91,7 @@ def all_supplies_in_holidays(holiday_hash)
       else
         print "  #{holiday.to_s.capitalize}: "
       end
-      
+
       supplies.each do |supply|
         if supply.index < (supplies.length - 1)
           if supply.include?('_')
@@ -99,7 +99,7 @@ def all_supplies_in_holidays(holiday_hash)
           else
             print "#{supply.capitalize}, "
           end # not_last_supply inner if-statement
-          
+
         else
           if supply.include?('_')
             print "#{supply.split('_').collect {|word| word.capitalize}.join(' ')}"
@@ -111,7 +111,7 @@ def all_supplies_in_holidays(holiday_hash)
         end # supply outer if-statment
       end # supplies.each do statement
     end # holidays.each do statement
-  end
+  end # holiday_hase.each do statement
 end
 
 def all_holidays_with_bbq(holiday_hash)
