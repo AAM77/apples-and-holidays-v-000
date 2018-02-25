@@ -99,6 +99,14 @@ def all_supplies_in_holidays(holiday_hash)
             print "#{supply.capitalize}, "
           end
         else
+          if supply.include?('_')
+            print "#{supply.split('_').collect {|word| word.capitalize}.join(' ')}"
+            puts " "
+          else
+            print "#{supply.capitalize}"
+            puts " "
+          end
+          
           
         print "#{supply.capitalize}, "
       end
