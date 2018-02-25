@@ -107,9 +107,6 @@ def all_supplies_in_holidays(holiday_hash)
             puts " "
           end
         end
-
-
-        print "#{supply.capitalize}, "
       end
     end
   end
