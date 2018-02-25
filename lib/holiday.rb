@@ -102,6 +102,8 @@ def all_supplies_in_holidays(holiday_hash)
         end # supply if-statment
       end # supplies.each do statement
 
+      puts string
+
     end # holidays.each do statement
   end # holiday_hase.each do statement
 end # main-method
