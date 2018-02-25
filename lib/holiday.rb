@@ -90,7 +90,6 @@ def all_supplies_in_holidays(holiday_hash)
       string = string + "  #{holiday.to_s.split('_').collect {|word| word.capitalize}.join(' ')}: #{supplies.join(', ')}"
       
       puts string
-
     end # holidays.each do statement
   end # holiday_hase.each do statement
 end # main-method
