@@ -93,15 +93,6 @@ def all_supplies_in_holidays(holiday_hash)
         string = string + "  #{holiday.to_s.capitalize}: #{supplies.join(', ')}"
       end
 
-      supplies.each do |supply|
-        if supplies.index(supply) < (supplies.length - 1)
-          string = string + "#{supply}, "
-
-        else
-          string = string + "#{supply}"
-        end # supply if-statment
-      end # supplies.each do statement
-
       puts string
 
     end # holidays.each do statement
