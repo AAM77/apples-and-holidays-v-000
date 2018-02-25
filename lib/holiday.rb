@@ -48,7 +48,7 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
       end # inner each-do
     end # if-statement
   end # outer each-do
-end # method
+end # main-method
 
 
 def add_supply_to_memorial_day(holiday_hash, supply)
