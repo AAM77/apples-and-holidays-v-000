@@ -89,7 +89,7 @@ def all_supplies_in_holidays(holiday_hash)
       if holiday.to_s.include?('_')
         puts "  #{holiday.to_s.split('_').collect {|word| word.capitalize}.join(' ')}:"
       else
-        puts "#{holiday.to_s.capitalize}:"
+        puts "  #{holiday.to_s.capitalize}:"
       end
       supplies.each do |supply|
         print "#{supply.capitalize}, "
