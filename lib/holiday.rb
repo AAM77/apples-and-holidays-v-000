@@ -75,7 +75,6 @@ def all_winter_holiday_supplies(holiday_hash)
   holiday_hash[:winter].values.flatten
 end
 
-#PREVIOUS
 def all_supplies_in_holidays(holiday_hash)
   # iterate through holiday_hash and print items such that your readout resembles:
   # Winter:
@@ -87,20 +86,23 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holidays|
     puts "#{season.to_s.capitalize}:"
     holidays.each do |holiday, supplies|
+      string = ""
       if holiday.to_s.include?('_')
-        print "  #{holiday.to_s.split('_').collect {|word| word.capitalize}.join(' ')}: "
+        string = string + "  #{holiday.to_s.split('_').collect {|word| word.capitalize}.join(' ')}: "
       else
-        print "  #{holiday.to_s.capitalize}: "
+        string = string + "  #{holiday.to_s.capitalize}: "
       end
 
       supplies.each do |supply|
         if supplies.index(supply) < (supplies.length - 1)
-          print "#{supply}, "
+          string = string + "#{supply}, "
 
         else
-          print "#{supply}\n"
+          string = string + "#{supply}"
         end # supply if-statment
       end # supplies.each do statement
+
+      puts string
 
     end # holidays.each do statement
   end # holiday_hase.each do statement
