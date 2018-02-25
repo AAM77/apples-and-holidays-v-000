@@ -119,4 +119,5 @@ def all_holidays_with_bbq(holiday_hash)
       end # if-statement
     end # holidays each-do
   end # holiday_hash each-do
+  return keys_with_BBQ
 end # main method
